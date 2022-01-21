@@ -1,6 +1,6 @@
 {
-  "id": "61e94f11445a717b0cc42870",
-  "createdAt": "Jan 20, 2022 12:01:21 PM",
+  "id": "61eae63d445a717b0cc42874",
+  "createdAt": "Jan 21, 2022 4:58:37 PM",
   "createdBy": "test-user",
   "sharedWith": [
     {
@@ -10,20 +10,20 @@
   ],
   "projectName": "Project_antonivlev/TestBoltzbitProject",
   "aiType": "DA",
-  "datasetId": "61e9492fe29fc023fd2015d3",
+  "datasetId": "61eae621e29fc023fd2015da",
   "modelIds": [
-    "61e94f116682e741aa382ea9",
-    "61e94f116682e741aa382eaa",
-    "61e94f116682e741aa382eab",
-    "61e94f116682e741aa382eac",
-    "61e94f116682e741aa382ead",
-    "61e94f116682e741aa382eae",
-    "61e94f116682e741aa382eaf",
-    "61e94f116682e741aa382eb0",
-    "61e94f116682e741aa382eb1"
+    "61eae63c6682e741aa382eb2",
+    "61eae63c6682e741aa382eb3",
+    "61eae63c6682e741aa382eb4",
+    "61eae63c6682e741aa382eb5",
+    "61eae63c6682e741aa382eb6",
+    "61eae63c6682e741aa382eb7",
+    "61eae63c6682e741aa382eb8",
+    "61eae63c6682e741aa382eb9",
+    "61eae63c6682e741aa382eba"
   ],
   "trainingJobIds": [
-    "61e94f1145cffa22434dc56c"
+    "61eae63c45cffa22434dc56e"
   ],
   "status": "DATASET_SELECTION"
 }
