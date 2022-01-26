@@ -1,29 +1,3 @@
 {
-  "id": "61f174ad10d22159e9bde867",
-  "createdAt": "Jan 26, 2022 4:19:57 PM",
-  "createdBy": "test-user",
-  "sharedWith": [
-    {
-      "userGroupId": "PUBLIC",
-      "accessLevel": "READ_ONLY"
-    }
-  ],
-  "projectName": "Project_antonivlev/TestBoltzbitProject",
-  "aiType": "DA",
-  "datasetId": "61eae621e29fc023fd2015da",
-  "modelIds": [
-    "61f174ad26a0bd23a41d413e",
-    "61f174ad26a0bd23a41d413f",
-    "61f174ad26a0bd23a41d4140",
-    "61f174ad26a0bd23a41d4141",
-    "61f174ad26a0bd23a41d4142",
-    "61f174ad26a0bd23a41d4143",
-    "61f174ad26a0bd23a41d4144",
-    "61f174ad26a0bd23a41d4145",
-    "61f174ad26a0bd23a41d4146"
-  ],
-  "trainingJobIds": [
-    "61f174ada9b8b062f315c671"
-  ],
-  "status": "DATASET_SELECTION"
+  "id": "61eae621e29fc023fd2015da",
 }
