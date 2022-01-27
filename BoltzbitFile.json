@@ -1,29 +1,84 @@
 {
-  "id": "61f1756410d22159e9bde868",
-  "createdAt": "Jan 26, 2022 4:23:00 PM",
+  "id": "61f27d8fdeb0ad06ceb5adbe",
   "createdBy": "test-user",
+  "createdAt": "Jan 27, 2022 11:10:07 AM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
       "accessLevel": "READ_ONLY"
     }
   ],
-  "projectName": "Project_antonivlev/TestBoltzbitProject",
-  "aiType": "DA",
-  "datasetId": "61eae621e29fc023fd2015da",
-  "modelIds": [
-    "61f174ad26a0bd23a41d413e",
-    "61f174ad26a0bd23a41d413f",
-    "61f174ad26a0bd23a41d4140",
-    "61f174ad26a0bd23a41d4141",
-    "61f174ad26a0bd23a41d4142",
-    "61f174ad26a0bd23a41d4143",
-    "61f174ad26a0bd23a41d4144",
-    "61f174ad26a0bd23a41d4145",
-    "61f174ad26a0bd23a41d4146"
-  ],
-  "trainingJobIds": [
-    "61f17564a9b8b062f315c672"
-  ],
-  "status": "DATASET_SELECTION"
+  "cubeId": "61f27d8edeb0ad06ceb5adbd",
+  "datasetId": "61f27ae51efdcb16b4d3b0b4",
+  "modelId": "61f27bcdb47df3516b4425bb",
+  "dataProcessingConfig": {
+    "steps": [
+      {
+        "operation": "RESCALE"
+      }
+    ]
+  },
+  "trainingConfig": {
+    "ckpt_file": "ckpt.npz",
+    "dtype": "float32",
+    "batch_size": 100,
+    "infer": {
+      "lkh_weight": 10,
+      "min_eps": 0.001,
+      "nlayers": 10,
+      "lfsteps": 5,
+      "initial_log_eps": -3,
+      "initial_ei_prior_mean": 0,
+      "initial_ei_prior_std": 1
+    },
+    "train": {
+      "trn_weight": 10,
+      "optimizer": {
+        "learning_rate_init": 2e-4,
+        "learning_rate_change_points": [],
+        "learning_rate_change_values": [],
+        "learning_rate_inf_init": 2e-4,
+        "learning_rate_inf_change_points": [],
+        "learning_rate_inf_change_values": []
+      },
+      "max_iter": 2000,
+      "save_period": 200,
+      "logging_period": 10
+    },
+    "dataloader": {
+      "trn_tst_split": 1.0,
+      "shuffle": true,
+      "repeat": false
+    }
+  },
+  "evaluationConfig": {
+    "method": "EVAL_DEFAULT",
+    "trainingJobId": "61f27d909f132e2255b2f462",
+    "datasetId": "61f27ae51efdcb16b4d3b0b4",
+    "taskIds": [
+      "61f27d8f6dd693018ac8bc18",
+      "61f27d8f6dd693018ac8bc19",
+      "61f27d8f6dd693018ac8bc1a"
+    ],
+    "metrics": [
+      {
+        "type": "AVERAGE_LOG_LOSS"
+      },
+      {
+        "type": "AVERAGE_ACCURACY"
+      },
+      {
+        "type": "AVERAGE_PERCENTAGE_ERROR"
+      },
+      {
+        "type": "AVERAGE_ERROR"
+      },
+      {
+        "type": "PR_CURVE"
+      },
+      {
+        "type": "ROC_CURVE"
+      }
+    ]
+  }
 }
