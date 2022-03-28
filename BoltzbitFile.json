@@ -1,7 +1,7 @@
 {
-  "id": "62153eda3a831f7b3afb0444",
+  "id": "6241e69c4567525092c28ec5",
   "createdBy": "test-user",
-  "createdAt": "Feb 22, 2022 7:51:54 PM",
+  "createdAt": "Mar 28, 2022 5:47:24 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
@@ -11,9 +11,9 @@
       "userGroupId": "test-user"
     }
   ],
-  "cubeId": "6215399a3a831f7b3afb043f",
-  "datasetId": "621527c712ba35250af9a9a3",
-  "modelId": "62153edaf8d72a0a43c85b65",
+  "cubeId": "6241e69b4567525092c28ec4",
+  "datasetId": "6241d5fe1b3bf8446d8e084e",
+  "modelId": "6241d6093e85384c560e44b7",
   "dataProcessingConfig": {
     "steps": [
       {
@@ -37,10 +37,10 @@
     "train": {
       "trn_weight": 10,
       "optimizer": {
-        "learning_rate_init": 0.0002,
+        "learning_rate_init": 2e-4,
         "learning_rate_change_points": [],
         "learning_rate_change_values": [],
-        "learning_rate_inf_init": 0.0002,
+        "learning_rate_inf_init": 2e-4,
         "learning_rate_inf_change_points": [],
         "learning_rate_inf_change_values": []
       },
@@ -49,21 +49,23 @@
       "logging_period": 10
     },
     "dataloader": {
-      "trn_tst_split": 1,
+      "trn_tst_split": 1.0,
       "shuffle": true,
       "repeat": false
     }
   },
   "evaluationConfig": {
     "method": "EVAL_DEFAULT",
-    "trainingJobId": "62153eda86fbe10533d03a2c",
-    "datasetId": "621527c712ba35250af9a9a3",
+    "datasetId": "6241d5fe1b3bf8446d8e084e",
     "taskIds": [
-      "621527d912ba35250af9a9a4",
-      "621527d912ba35250af9a9a5",
-      "621527d912ba35250af9a9a6"
+      "6241d60c1b3bf8446d8e084f",
+      "6241d60c1b3bf8446d8e0850",
+      "6241d60c1b3bf8446d8e0851"
     ],
     "metrics": [
+      {
+        "type": "R2"
+      },
       {
         "type": "AVERAGE_LOG_LOSS"
       },
