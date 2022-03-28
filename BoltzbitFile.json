@@ -1,7 +1,7 @@
 {
-  "id": "6241f7d24567525092c28ed9",
+  "id": "6241f7f84567525092c28eda",
   "createdBy": "test-user",
-  "createdAt": "Mar 28, 2022 7:00:50 PM",
+  "createdAt": "Mar 28, 2022 7:01:28 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
@@ -13,7 +13,7 @@
   ],
   "cubeId": "6241f4e94567525092c28ed4",
   "datasetId": "6241f4aa1b3bf8446d8e085a",
-  "modelId": "6241f7d23e85384c560e44cd",
+  "modelId": "6241f7f73e85384c560e44ce",
   "dataProcessingConfig": {
     "steps": [
       {
