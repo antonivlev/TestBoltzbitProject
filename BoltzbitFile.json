@@ -1,7 +1,7 @@
 {
-  "id": "6241f4ea4567525092c28ed5",
+  "id": "6241f4f34567525092c28ed6",
   "createdBy": "test-user",
-  "createdAt": "Mar 28, 2022 6:48:26 PM",
+  "createdAt": "Mar 28, 2022 6:48:35 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
@@ -13,7 +13,7 @@
   ],
   "cubeId": "6241f4e94567525092c28ed4",
   "datasetId": "6241f4aa1b3bf8446d8e085a",
-  "modelId": "6241f4e93e85384c560e44c7",
+  "modelId": "6241f4f33e85384c560e44ca",
   "dataProcessingConfig": {
     "steps": [
       {
@@ -37,10 +37,10 @@
     "train": {
       "trn_weight": 10,
       "optimizer": {
-        "learning_rate_init": 2e-4,
+        "learning_rate_init": 0.0002,
         "learning_rate_change_points": [],
         "learning_rate_change_values": [],
-        "learning_rate_inf_init": 2e-4,
+        "learning_rate_inf_init": 0.0002,
         "learning_rate_inf_change_points": [],
         "learning_rate_inf_change_values": []
       },
@@ -49,10 +49,11 @@
       "logging_period": 10
     },
     "dataloader": {
-      "trn_tst_split": 1.0,
+      "trn_tst_split": 1,
       "shuffle": true,
       "repeat": false
-    }
+    },
+    "workerType": "GPU"
   },
   "evaluationConfig": {
     "method": "EVAL_DEFAULT",
