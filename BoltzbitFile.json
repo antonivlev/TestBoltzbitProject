@@ -1,7 +1,7 @@
 {
-  "id": "6241eb564567525092c28ecb",
+  "id": "6241eba64567525092c28ecd",
   "createdBy": "test-user",
-  "createdAt": "Mar 28, 2022 6:07:34 PM",
+  "createdAt": "Mar 28, 2022 6:08:54 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
@@ -11,7 +11,7 @@
       "userGroupId": "test-user"
     }
   ],
-  "cubeId": "6241eb564567525092c28eca",
+  "cubeId": "6241eba64567525092c28ecc",
   "datasetId": "6241eb251b3bf8446d8e0856",
   "modelId": "6241eb4f3e85384c560e44c2",
   "dataProcessingConfig": {
