@@ -1,7 +1,7 @@
 {
-  "id": "6241f8534567525092c28edc",
+  "id": "6241f8724567525092c28edd",
   "createdBy": "test-user",
-  "createdAt": "Mar 28, 2022 7:02:59 PM",
+  "createdAt": "Mar 28, 2022 7:03:30 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
@@ -13,7 +13,7 @@
   ],
   "cubeId": "6241f4e94567525092c28ed4",
   "datasetId": "6241f4aa1b3bf8446d8e085a",
-  "modelId": "6241f8533e85384c560e44d0",
+  "modelId": "6241f8723e85384c560e44d1",
   "dataProcessingConfig": {
     "steps": [
       {
@@ -53,7 +53,7 @@
       "shuffle": true,
       "repeat": false
     },
-    "workerType": "CPU_SMALL"
+    "workerType": "GPU"
   },
   "evaluationConfig": {
     "method": "EVAL_DEFAULT",
