@@ -1,7 +1,7 @@
 {
-  "id": "6241f40f4567525092c28ed3",
+  "id": "6241f4ea4567525092c28ed5",
   "createdBy": "test-user",
-  "createdAt": "Mar 28, 2022 6:44:47 PM",
+  "createdAt": "Mar 28, 2022 6:48:26 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
@@ -11,9 +11,9 @@
       "userGroupId": "test-user"
     }
   ],
-  "cubeId": "6241efef4567525092c28ece",
-  "datasetId": "6241eb251b3bf8446d8e0856",
-  "modelId": "6241f40f3e85384c560e44c6",
+  "cubeId": "6241f4e94567525092c28ed4",
+  "datasetId": "6241f4aa1b3bf8446d8e085a",
+  "modelId": "6241f4e93e85384c560e44c7",
   "dataProcessingConfig": {
     "steps": [
       {
@@ -37,10 +37,10 @@
     "train": {
       "trn_weight": 10,
       "optimizer": {
-        "learning_rate_init": 0.0002,
+        "learning_rate_init": 2e-4,
         "learning_rate_change_points": [],
         "learning_rate_change_values": [],
-        "learning_rate_inf_init": 0.0002,
+        "learning_rate_inf_init": 2e-4,
         "learning_rate_inf_change_points": [],
         "learning_rate_inf_change_values": []
       },
@@ -49,19 +49,18 @@
       "logging_period": 10
     },
     "dataloader": {
-      "trn_tst_split": 1,
+      "trn_tst_split": 1.0,
       "shuffle": true,
       "repeat": false
-    },
-    "workerType": "GPU"
+    }
   },
   "evaluationConfig": {
     "method": "EVAL_DEFAULT",
-    "datasetId": "6241eb251b3bf8446d8e0856",
+    "datasetId": "6241f4aa1b3bf8446d8e085a",
     "taskIds": [
-      "6241eb4f1b3bf8446d8e0857",
-      "6241eb4f1b3bf8446d8e0858",
-      "6241eb4f1b3bf8446d8e0859"
+      "6241f4ea1b3bf8446d8e085b",
+      "6241f4ea1b3bf8446d8e085c",
+      "6241f4ea1b3bf8446d8e085d"
     ],
     "metrics": [
       {
