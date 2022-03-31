@@ -1,7 +1,7 @@
 {
-  "id": "624454334567525092c28f07",
+  "id": "6245e4baa523ac20060f97ee",
   "createdBy": "test-user",
-  "createdAt": "Mar 30, 2022 1:59:31 PM",
+  "createdAt": "Mar 31, 2022 5:28:26 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
@@ -11,9 +11,9 @@
       "userGroupId": "test-user"
     }
   ],
-  "cubeId": "624454334567525092c28f06",
-  "datasetId": "624313901b3bf8446d8e086f",
-  "modelId": "624313be3e85384c560e44de",
+  "cubeId": "6245e4baa523ac20060f97ed",
+  "datasetId": "623cd89ea5da0d375f17957d",
+  "modelId": "623cd8a9250c62764526e734",
   "dataProcessingConfig": {
     "steps": [
       {
@@ -22,45 +22,54 @@
     ]
   },
   "trainingConfig": {
-    "ckpt_file": "ckpt.npz",
-    "dtype": "float32",
     "batch_size": 100,
     "infer": {
       "lkh_weight": 10,
+      "nlayers": 3,
+      "lfsteps": 6,
       "min_eps": 0.001,
-      "nlayers": 10,
-      "lfsteps": 5,
+      "momentum_std": 0.1,
       "initial_log_eps": -3,
       "initial_ei_prior_mean": 0,
-      "initial_ei_prior_std": 1
+      "initial_ei_prior_std": 0.1,
+      "stop_gradient_pot": false
     },
     "train": {
       "trn_weight": 10,
+      "bp_through_z": true,
       "optimizer": {
-        "learning_rate_init": 2e-4,
-        "learning_rate_change_points": [],
-        "learning_rate_change_values": [],
-        "learning_rate_inf_init": 2e-4,
-        "learning_rate_inf_change_points": [],
-        "learning_rate_inf_change_values": []
+        "learning_rate_init": 5e-3,
+        "learning_rate_change_points": 200,
+        "learning_rate_change_values": 0.99,
+        "learning_rate_inf_init": 5e-3,
+        "learning_rate_inf_change_points": 200,
+        "learning_rate_inf_change_values": 0.99
       },
-      "max_iter": 2000,
-      "save_period": 200,
+      "max_iter": 500,
+      "save_period": 50,
       "logging_period": 10
     },
     "dataloader": {
       "trn_tst_split": 1.0,
-      "shuffle": true,
-      "repeat": false
+      "map_fn": {
+        "mask_out_columns": 1,
+        "train_on_holdout": true
+      },
+      "sampler": {
+        "type": "PlainSampler",
+        "args": {
+          "shuffle": true
+        }
+      }
     }
   },
   "evaluationConfig": {
     "method": "EVAL_DEFAULT",
-    "datasetId": "624313901b3bf8446d8e086f",
+    "datasetId": "623cd89ea5da0d375f17957d",
     "taskIds": [
-      "624313c21b3bf8446d8e0870",
-      "624313c21b3bf8446d8e0871",
-      "624313c21b3bf8446d8e0872"
+      "623cd8aaa5da0d375f17957e",
+      "623cd8aaa5da0d375f17957f",
+      "623cd8aaa5da0d375f179580"
     ],
     "metrics": [
       {
