@@ -1,7 +1,7 @@
 {
-  "id": "6255d06e475acc205802589e",
+  "id": "626198ade267eb19ad70d9eb",
   "createdBy": "test-user",
-  "createdAt": "Apr 12, 2022 7:18:06 PM",
+  "createdAt": "Apr 21, 2022 6:47:25 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
@@ -12,60 +12,50 @@
       "accessLevel": "OWNER"
     }
   ],
-  "cubeId": "6245e4baa523ac20060f97ed",
-  "datasetId": "623cd89ea5da0d375f17957d",
-  "modelId": "6255d06ebc16e833a72c3b36",
+  "cubeId": "626198ace267eb19ad70d9ea",
+  "datasetId": "62602e0f1005d511d73daacc",
+  "modelId": "626198ab9c183f30ba5d699e",
   "trainingConfig": {
+    "ckpt_file": "ckpt.npz",
+    "dtype": "float32",
     "batch_size": 100,
     "infer": {
       "lkh_weight": 10,
-      "nlayers": 3,
-      "lfsteps": 6,
       "min_eps": 0.001,
-      "momentum_std": 0.1,
+      "nlayers": 10,
+      "lfsteps": 5,
       "initial_log_eps": -3,
       "initial_ei_prior_mean": 0,
-      "initial_ei_prior_std": 0.1,
-      "stop_gradient_pot": false
+      "initial_ei_prior_std": 1
     },
     "train": {
       "trn_weight": 10,
-      "bp_through_z": true,
       "optimizer": {
-        "learning_rate_init": 0.005,
-        "learning_rate_change_points": 200,
-        "learning_rate_change_values": 0.99,
-        "learning_rate_inf_init": 0.005,
-        "learning_rate_inf_change_points": 200,
-        "learning_rate_inf_change_values": 0.99
+        "learning_rate_init": 2e-4,
+        "learning_rate_change_points": [],
+        "learning_rate_change_values": [],
+        "learning_rate_inf_init": 2e-4,
+        "learning_rate_inf_change_points": [],
+        "learning_rate_inf_change_values": []
       },
-      "max_iter": 500,
-      "save_period": 50,
+      "max_iter": 2000,
+      "save_period": 200,
       "logging_period": 10
     },
     "dataloader": {
-      "trn_tst_split": 1,
-      "map_fn": {
-        "mask_out_columns": 1,
-        "train_on_holdout": true
-      },
-      "sampler": {
-        "type": "PlainSampler",
-        "args": {
-          "shuffle": true
-        }
-      }
-    },
-    "workerType": "CPU_LARGE"
+      "trn_tst_split": 1.0,
+      "shuffle": true,
+      "repeat": false
+    }
   },
   "evaluationConfig": {
     "method": "EVAL_DEFAULT",
-    "trainingJobId": "6255d06f9453161721995dc4",
-    "datasetId": "623cd89ea5da0d375f17957d",
+    "trainingJobId": "626198addc34a332f306cbf7",
+    "datasetId": "62602e0f1005d511d73daacc",
     "taskIds": [
-      "623cd8aaa5da0d375f17957e",
-      "623cd8aaa5da0d375f17957f",
-      "623cd8aaa5da0d375f179580"
+      "626198ad834461053154edf7",
+      "626198ad834461053154edf8",
+      "626198ad834461053154edf9"
     ],
     "metrics": [
       {
